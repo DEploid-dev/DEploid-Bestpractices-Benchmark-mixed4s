@@ -44,7 +44,7 @@ coverage_profile = tmpCoverage$refCount + tmpCoverage$altCount
 
 for ( wi in 1:4 ){
     newvcf = full.vcf[kept.idx,]
-    newvcf$FORMAT = "AD"
+    newvcf$FORMAT = "GT:AD"
     newvcf[["GB4"]] = NULL
 
     p = w[[wi]]
@@ -57,7 +57,7 @@ for ( wi in 1:4 ){
     altCount1 = rbinom(n.loci, coverage_profile, includeErrorWSAF1)
     refCount1 = coverage_profile - altCount1
 
-    newvcf$cb_3D7_HB3_DD2_7G8 = paste(refCount1, altCount1, sep = ",")
+    newvcf$cb_3D7_HB3_DD2_7G8 = paste("./.:", refCount1, ",", altCount1, sep = "")
     write.table(newvcf, file = paste("cb_3D7_HB3_DD2_7G8_w", wi, ".vcf", sep =""), sep ="\t", quote = F, row.names=F)
 
 }
