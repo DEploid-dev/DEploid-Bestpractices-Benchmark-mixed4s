@@ -43,6 +43,6 @@ done
 while read sample ; do
     run_dEploid 3
     run_dEploid 4
-done < labSampleNames
+done < simSampleNames
 
 
