@@ -1,5 +1,5 @@
 #!/bin/bash
-dataDir="~/dEploidPaper/deconv/"
+dataDir="/well/mcvean/joezhu/DEploid-Bestpractices-Benchmark-mixed4s/"
 root="/well/mcvean/joezhu/DEploid-Lasso-Benchmark/"
 function run_dEploid {
     mkdir ${root}"dEploidOut/"${sample}
