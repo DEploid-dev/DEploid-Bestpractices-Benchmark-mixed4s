@@ -33,7 +33,6 @@ rCommon=\"\${common} -dEprefix \${prefix}\"
 time dEploid \${dEploidCommon} -panel \${panel} -k $@
 ## &> ${root}/dEploidOut/\${sample}/\${prefix}.time
 interpretDEploid.r \${rCommon}
-done
 
 " > ${sample}k$@_vqslod${vqslod}.sh
     qsub ${sample}k$@_vqslod${vqslod}.sh
