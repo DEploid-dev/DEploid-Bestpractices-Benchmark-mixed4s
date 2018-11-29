@@ -21,7 +21,7 @@ echo "
 
 plaf=${dataDir}labStrains.eg.PLAF.txt
 excludeAt=${dataDir}exclude.txt
-vcf=${dataDir}${sample}.vcf.gz
+vcf=${dataDir}in_silico_mixed_4s/${sample}.vcf.gz
 
 panel=${root}labStrains.eg.panel.txt
 
